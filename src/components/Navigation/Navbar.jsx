@@ -1,32 +1,57 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import { AiOutlineClose } from 'react-icons/ai'
 import {
   BiBookmarkHeart,
   BiHomeHeart,
   BiMessageRoundedDetail,
   BiUser,
 } from 'react-icons/bi'
+import { FaBars } from 'react-icons/fa'
 import { RiServiceLine } from 'react-icons/ri'
-import './Navbar.css'
+
+import styled from './navbar.module.css'
 const Navbar = () => {
+  const [bar, setBar] = useState(false)
   return (
-    <nav>
-      <a href="#home">
-        <BiHomeHeart />
-      </a>
-      <a href="#about">
-        <BiUser />
-      </a>
-      <a href="#experience">
-        <BiBookmarkHeart />
-      </a>
-      <a href="#service">
-        <RiServiceLine />
-      </a>
-      <a href="#contact">
-        <BiMessageRoundedDetail />
-      </a>
-    </nav>
+    <header className={styled.header}>
+      <span>Jabir</span>
+      <nav>
+        <ul
+          className={
+            bar ? [styled.menu, styled.active].join(' ') : [styled.menu]
+          }
+        >
+          <li>
+            <a href="#home">
+              <BiHomeHeart />
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <BiUser />
+            </a>
+          </li>
+          <li>
+            <a href="#experience">
+              <BiBookmarkHeart />
+            </a>
+          </li>
+          <li>
+            <a href="#service">
+              <RiServiceLine />
+            </a>
+          </li>
+          <li>
+            <a href="#constact">
+              <BiMessageRoundedDetail />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div className={styled.btn_mobile} onClick={() => setBar(!bar)}>
+        {bar ? <AiOutlineClose size={30} /> : <FaBars size={30} />}
+      </div>
+    </header>
   )
 }
 
