@@ -7,16 +7,18 @@ import Header from './components/Header/Header'
 import Navbar from './components/Navigation/Navbar'
 import Portfolio from './components/Portfolio/Portfolio'
 import Service from './components/Service/Service'
+import Testimonials from './components/Testimonials/Testimonials'
 
 const App = () => {
   return (
     <div style={{ textAlign: 'center', fontSize: '20px' }}>
-      <Navbar />
       <Header />
+      <Navbar />
       <About />
       <Experience />
-      <Portfolio />
       <Service />
+      <Portfolio />
+      <Testimonials />
       <Contact />
       <Footer />
     </div>
