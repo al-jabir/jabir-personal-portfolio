@@ -11,7 +11,7 @@ import Testimonials from './components/Testimonials/Testimonials'
 
 const App = () => {
   return (
-    <div style={{ textAlign: 'center', fontSize: '20px' }}>
+    <>
       <Header />
       <Navbar />
       <About />
@@ -21,7 +21,7 @@ const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
-    </div>
+    </>
   )
 }
 
