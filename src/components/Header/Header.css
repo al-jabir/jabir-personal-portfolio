@@ -38,13 +38,6 @@ header {
   bottom: 3rem;
 }
 
-.header_socials::after {
-  content: '';
-  width: 1px;
-  height: 2rem;
-  background: purple;
-}
-
 /* ===== ME ==== */
 
 .me {
