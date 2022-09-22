@@ -84,7 +84,7 @@ header {
 
 /* ===== Media Queries (Mediam Device) ======= */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 600px) {
   header {
     height: 100vh;
   }
