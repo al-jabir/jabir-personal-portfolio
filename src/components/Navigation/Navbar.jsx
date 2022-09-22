@@ -1,5 +1,5 @@
 import React from 'react'
-import {} from 'react-icons'
+
 import {
   BiBookmarkHeart,
   BiHomeHeart,
@@ -7,6 +7,7 @@ import {
   BiUser,
 } from 'react-icons/bi'
 import { RiServiceLine } from 'react-icons/ri'
+import './Navbar.css'
 const Navbar = () => {
   return (
     <nav>
