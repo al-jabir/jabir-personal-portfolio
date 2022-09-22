@@ -1,11 +1,26 @@
-import React from "react";
+import React from 'react'
+import About from './components/About/About'
+import Contact from './components/Contact/Contact'
+import Experience from './components/Experience/Experience'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
+import Navbar from './components/Navigation/Navbar'
+import Portfolio from './components/Portfolio/Portfolio'
+import Service from './components/Service/Service'
 
 const App = () => {
   return (
-    <div>
-      <h1>I will be develop portfolio</h1>
+    <div style={{ textAlign: 'center', fontSize: '20px' }}>
+      <Navbar />
+      <Header />
+      <About />
+      <Experience />
+      <Portfolio />
+      <Service />
+      <Contact />
+      <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
