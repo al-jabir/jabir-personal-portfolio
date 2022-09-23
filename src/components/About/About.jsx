@@ -34,11 +34,10 @@ const About = () => {
             </article>
           </div>
           <p>
-            I'm a MERN stack Developer. I can see myself in a top-ranking
-            position in the web developing market. True that this market is
-            growing higher day by day but my skills are also growing as I am a
-            very keen learner and technology lover person. That's why I find
-            this sector very interesting and always work with my full enthusiasm
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            libero voluptates iste atque nulla facilis corrupti sunt molestias,
+            obcaecati vero harum ducimus esse distinctio consequuntur quas
+            dolorum cum beatae ipsum?
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
