@@ -40,6 +40,7 @@ const About = () => {
             very keen learner and technology lover person. That's why I find
             this sector very interesting and always work with my full enthusiasm
           </p>
+          <button className="btn btn-primary">Let's Talk</button>
         </div>
       </div>
     </section>
