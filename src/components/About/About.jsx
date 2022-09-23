@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiFillFolderOpen, AiOutlineUsergroupAdd } from 'react-icons/ai'
 import { FaAward } from 'react-icons/fa'
-import Me from '../../assets/aj-me2.jpeg'
+import Img from '../../assets/me-about.jpg'
 import './About.css'
 
 const About = () => {
@@ -12,7 +12,7 @@ const About = () => {
       <div className="container about_container">
         <div className="about_me">
           <div className="about_me-img">
-            <img src={Me} alt="me" />
+            <img src={Img} alt="me" />
           </div>
         </div>
         <div className="about_content">
@@ -40,7 +40,9 @@ const About = () => {
             very keen learner and technology lover person. That's why I find
             this sector very interesting and always work with my full enthusiasm
           </p>
-          <button className="btn btn-primary">Let's Talk</button>
+          <a href="#contact" className="btn btn-primary">
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>
