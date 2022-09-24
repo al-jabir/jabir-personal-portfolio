@@ -1,7 +1,7 @@
 import React from 'react'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
-import Experience from './components/Experience/Experience'
+import Skill from './components/Experience/Skills'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Navbar from './components/Navigation/Navbar'
@@ -15,7 +15,7 @@ const App = () => {
       <Header />
       <Navbar />
       <About />
-      <Experience />
+      <Skill />
       <Service />
       <Portfolio />
       <Testimonials />

@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiFillFolderOpen, AiOutlineUsergroupAdd } from 'react-icons/ai'
 import { FaAward } from 'react-icons/fa'
-import Img from '../../assets/me-about.jpg'
+import Img from '../../assets/aj-me2.jpeg'
 import './About.css'
 
 const About = () => {
@@ -20,12 +20,12 @@ const About = () => {
             <article className="about_card">
               <FaAward className="about_icon" />
               <h5>Experience</h5>
-              <small>2 Years Years working</small>
+              <small>1.5+ Years working</small>
             </article>
             <article className="about_card">
               <AiOutlineUsergroupAdd className="about_icon" />
               <h5>Clients</h5>
-              <small>150 worldwide</small>
+              <small>150+ worldwide</small>
             </article>
             <article className="about_card">
               <AiFillFolderOpen className="about_icon" />
@@ -34,10 +34,12 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            libero voluptates iste atque nulla facilis corrupti sunt molestias,
-            obcaecati vero harum ducimus esse distinctio consequuntur quas
-            dolorum cum beatae ipsum?
+            Hello !! My name is <span className="me-t">Al Jabir</span> . I want
+            to gain confidence and fame using my potential in this position, and
+            express my innovative creative skills for self and company growth. I
+            am a hardworking and quick learner person. I believe hard work is
+            the only way to success. Love to learn new technology and try to
+            improve myself.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
