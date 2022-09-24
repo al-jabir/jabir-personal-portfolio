@@ -42,7 +42,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#constact">
+            <a href="#contact">
               <BiMessageRoundedDetail />
             </a>
           </li>

@@ -67,6 +67,11 @@ section > h5 {
   color: var(--color-primary);
 }
 
+section > h2 {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
 .text-light {
   color: var(--color-light);
 }
