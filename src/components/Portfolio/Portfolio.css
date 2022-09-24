@@ -23,6 +23,7 @@
 }
 
 .portfolio_item h3 {
+  text-transform: uppercase;
   text-align: center;
   margin: 1.2rem 0 2rem;
 }

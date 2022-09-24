@@ -1,50 +1,50 @@
-import port1 from '../../assets/portfolio1.jpg'
-import port2 from '../../assets/portfolio2.jpg'
-import port3 from '../../assets/portfolio3.jpg'
-import port4 from '../../assets/portfolio4.jpg'
-import port5 from '../../assets/portfolio5.png'
-import port6 from '../../assets/portfolio6.jpg'
+import port1 from '../../assets/agency.png'
+import port2 from '../../assets/ecom2.jpg'
+import port3 from '../../assets/education.png'
+import port4 from '../../assets/hospital.png'
+import port5 from '../../assets/hotel.png'
+import port6 from '../../assets/tour.png'
 
 const Data = [
   {
     id: 1,
     img: port1,
-    title: 'Monster Rolex',
+    title: 'Agency',
     github: 'Github',
     demo: 'Live Demo',
   },
   {
     id: 2,
     img: port2,
-    title: 'ECommarce',
+    title: 'E-Commarce',
     github: 'Github',
     demo: 'Live Demo',
   },
   {
     id: 3,
     img: port3,
-    title: 'Nasa Project',
+    title: 'Education',
     github: 'Github',
     demo: 'Live Demo',
   },
   {
     id: 4,
     img: port4,
-    title: 'Cyber Security',
+    title: 'Hospital',
     github: 'Github',
     demo: 'Live Demo',
   },
   {
     id: 5,
     img: port5,
-    title: 'Design board',
+    title: 'Hotel booking',
     github: 'Github',
     demo: 'Live Demo',
   },
   {
     id: 6,
     img: port6,
-    title: 'Task Application',
+    title: 'Travel',
     github: 'Github',
     demo: 'Live Demo',
   },
