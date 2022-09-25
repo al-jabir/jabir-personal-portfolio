@@ -3,16 +3,24 @@ import { BsFacebook, BsGithub, BsLinkedin, BsMessenger } from 'react-icons/bs'
 const Social = () => {
   return (
     <div className="header_socials">
-      <a href="#linkedin.com/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/jabirdevs"
+        target="_blank"
+        rel="noreferrer"
+      >
         <BsLinkedin />
       </a>
-      <a href="facebook" target="_blank">
+      <a
+        href="https://www.facebook.com/aljabirceo"
+        target="_blank"
+        rel="noreferrer"
+      >
         <BsFacebook />
       </a>
-      <a href="github" target="_blank">
+      <a href="https://github.com/al-jabir" target="_blank" rel="noreferrer">
         <BsGithub />
       </a>
-      <a href="messenger">
+      <a href="https://m.me/aljabirceo" target="_blank" rel="noreferrer">
         <BsMessenger />
       </a>
     </div>

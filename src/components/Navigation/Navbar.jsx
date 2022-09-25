@@ -7,7 +7,6 @@ import {
   BiUser,
 } from 'react-icons/bi'
 import { FaBars } from 'react-icons/fa'
-import { RiServiceLine } from 'react-icons/ri'
 
 import styled from './navbar.module.css'
 const Navbar = () => {
@@ -32,13 +31,8 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#experience">
+            <a href="#Skills">
               <BiBookmarkHeart />
-            </a>
-          </li>
-          <li>
-            <a href="#service">
-              <RiServiceLine />
             </a>
           </li>
           <li>
