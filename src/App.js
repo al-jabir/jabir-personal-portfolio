@@ -6,7 +6,7 @@ import Header from './components/Header/Header'
 import Navbar from './components/Navigation/Navbar'
 import Particle from './components/Particles/Particle'
 import Portfolio from './components/Portfolio/Portfolio'
-import Skill from './components/Skills/Skills'
+// import Skill from './components/Skills/Skills'
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
       <Header />
       <Navbar />
       <About />
-      <Skill />
+      {/*  <Skill /> */}
       <Portfolio />
       <Contact />
       <Footer />
