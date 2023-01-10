@@ -1,5 +1,5 @@
 import port1 from '../../assets/agency.png'
-import port2 from '../../assets/ecom2.jpg'
+import port2 from '../../assets/ecommarce.png'
 import port3 from '../../assets/education.png'
 import port4 from '../../assets/hospital.png'
 import port5 from '../../assets/hotel.png'
@@ -17,8 +17,8 @@ const Data = [
     id: 2,
     img: port2,
     title: 'E-Commarce',
-    github: 'Github',
-    demo: 'Live Demo',
+    github: 'https://github.com/al-jabir/aj-clothing-shop',
+    demo: 'https://clothing-shops.netlify.app/',
   },
   {
     id: 3,
