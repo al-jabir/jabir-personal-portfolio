@@ -10,8 +10,8 @@ const Data = [
     id: 1,
     img: port1,
     title: 'Agency',
-    github: 'Github',
-    demo: 'Live Demo',
+    github: 'https://github.com/al-jabir/agency-website',
+    demo: 'https://agency-websites.netlify.app/',
   },
   {
     id: 2,
