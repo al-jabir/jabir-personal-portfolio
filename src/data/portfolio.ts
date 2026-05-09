@@ -7,7 +7,6 @@ import {
   FaNodeJs,
   FaReact,
   FaSass,
-  FaUpwork,
 } from "react-icons/fa6";
 import {
   SiCss,
