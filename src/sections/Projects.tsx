@@ -23,7 +23,7 @@ export function Projects() {
             title="Selected builds with premium motion and sharp layout."
             description="A curated project wall covering React websites, animation-heavy experiences, dashboards, landing pages, and full-stack learning work."
           />
-          <div className="mb-14 flex max-w-full flex-wrap gap-2 rounded-3xl border border-white/10 bg-white/[0.04] p-2 light:border-black/10 light:bg-white/70 sm:rounded-full">
+          <div className="mb-14 flex max-w-full flex-wrap gap-2 rounded-3xl border border-white/10 bg-white/4 p-2 light:border-black/10 light:bg-white/70 sm:rounded-full">
             {filters.map((filter) => (
               <button
                 key={filter}
@@ -54,7 +54,7 @@ export function Projects() {
               variants={fadeUp}
               whileHover={{ y: -12, rotateX: 3, rotateY: index % 2 === 0 ? -3 : 3 }}
               transition={{ duration: 0.45 }}
-              className="project-card glass-panel group overflow-hidden rounded-[2rem]"
+              className="project-card glass-panel group overflow-hidden rounded-4xl"
             >
               <div className="relative h-64 overflow-hidden">
                 <motion.div
@@ -67,13 +67,14 @@ export function Projects() {
                 <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/20 px-3 py-1 text-xs font-bold text-white backdrop-blur-xl">
                   {project.category}
                 </div>
+                <img src={project.image} alt={project.title} />
               </div>
               <div className="p-6">
                 <h3 className="font-outfit text-2xl font-semibold text-white light:text-ink">{project.title}</h3>
                 <p className="mt-3 min-h-20 text-sm leading-7 text-slate-300 light:text-slate-700">{project.description}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {project.stack.map((tech) => (
-                    <span key={tech} className="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-xs font-semibold text-slate-200 light:border-black/10 light:text-slate-700">
+                    <span key={tech} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-200 light:border-black/10 light:text-slate-700">
                       {tech}
                     </span>
                   ))}

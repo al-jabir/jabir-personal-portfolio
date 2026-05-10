@@ -26,6 +26,12 @@ import { FiLayers, FiMonitor, FiPenTool, FiZap } from "react-icons/fi";
 import { HiOutlineSparkles } from "react-icons/hi2";
 import type { IconType } from "react-icons";
 
+import project1 from '../assets/project/1.webp';
+import project2 from '../assets/agency.png';
+import project3 from '../assets/agency.png';
+import project4 from '../assets/agency.png';
+import project5 from '../assets/agency.png';
+
 export type Skill = {
   name: string;
   level: number;
@@ -35,7 +41,7 @@ export type Skill = {
 
 export type Project = {
   title: string;
-  category: "React" | "Animation" | "Landing" | "Dashboard" | "MERN";
+  category: "HTML" | "ReactJS" | "NextJS";
   description: string;
   stack: string[];
   image: string;
@@ -126,63 +132,53 @@ export const services = [
 export const projects: Project[] = [
   {
     title: "Travel Website",
-    category: "React",
+    category: "ReactJS",
     description: "A cinematic booking interface with destination storytelling, responsive cards, and fluid transitions.",
     stack: ["ReactJS", "Tailwind", "Framer Motion"],
-    image: "linear-gradient(135deg, #1f4037, #99f2c8)",
+    image: project1,
     live: "#",
     repo: "#",
     accent: "#56f0c6",
   },
   {
     title: "Agency Website with GSAP",
-    category: "Animation",
+    category: "HTML",
     description: "A bold agency experience with scroll-driven reveals, kinetic typography, and smooth section pacing.",
     stack: ["ReactJS", "GSAP", "ScrollTrigger"],
-    image: "linear-gradient(135deg, #141e30, #ff6f61)",
+    image: project2,
     live: "#",
     repo: "#",
     accent: "#ff6f61",
   },
   {
     title: "Personal Portfolio Website",
-    category: "React",
+    category: "ReactJS",
     description: "A high-end developer portfolio with dark mode, magnetic CTAs, and SEO-ready presentation.",
     stack: ["Vite", "React", "EmailJS"],
-    image: "linear-gradient(135deg, #0f2027, #2c5364)",
+    image: project3,
     live: "#",
     repo: "#",
     accent: "#6ddcff",
   },
   {
     title: "Business Landing Page",
-    category: "Landing",
+    category: "HTML",
     description: "A polished business page with conversion sections, animated statistics, and elegant content blocks.",
     stack: ["HTML5", "SCSS", "Bootstrap"],
-    image: "linear-gradient(135deg, #42275a, #734b6d)",
+    image: project4,
     live: "#",
     repo: "#",
     accent: "#f8c76b",
   },
   {
     title: "Dashboard UI",
-    category: "Dashboard",
+    category: "NextJS",
     description: "A clean analytics dashboard with reusable widgets, charts-ready layout, and responsive navigation.",
     stack: ["React", "TypeScript", "Redux Toolkit"],
-    image: "linear-gradient(135deg, #232526, #56f0c6)",
+    image: project5,
     live: "#",
     repo: "#",
     accent: "#56f0c6",
-  },
-  {
-    title: "Full Stack MERN Application",
-    category: "MERN",
-    description: "A full-stack learning project with authentication-ready screens, API flow, and MongoDB data modeling.",
-    stack: ["MongoDB", "Express", "React", "Node"],
-    image: "linear-gradient(135deg, #200122, #6f0000)",
-    live: "#",
-    repo: "#",
-    accent: "#ff6f61",
   },
 ];
 

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiCode, FiCpu, FiLayers } from "react-icons/fi";
-import heroImage from "../assets/hero.png";
+import heroImage from "../assets/aj-me2.jpeg";
 import { SectionHeader } from "../components/SectionHeader";
 import { fadeUp, staggerContainer } from "../animations/variants";
 
@@ -33,9 +33,9 @@ export function About() {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="glass-panel relative overflow-hidden rounded-[2rem] p-4"
+            className="glass-panel relative overflow-hidden rounded-4xl p-4"
           >
-            <img src={heroImage} alt="Al Jabir profile" className="aspect-[4/5] w-full rounded-[1.5rem] object-cover" loading="lazy" />
+            <img src={heroImage} alt="Al Jabir profile" className="aspect-4/5 w-full rounded-3xl object-cover" loading="lazy" />
             <div className="absolute inset-x-6 bottom-6 rounded-3xl border border-white/10 bg-night/70 p-5 backdrop-blur-xl light:border-slate-900/10 light:bg-white/85">
               <p className="text-sm uppercase tracking-[0.22em] text-mint light:text-emerald-700">Focus</p>
               <p className="mt-2 font-outfit text-2xl font-semibold text-white light:text-ink">React, animation, responsive systems</p>
