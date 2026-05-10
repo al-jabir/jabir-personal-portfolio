@@ -21,7 +21,7 @@ export function Projects() {
           <SectionHeader
             eyebrow="Projects"
             title="Selected builds with premium motion and sharp layout."
-            description="A curated project wall covering React websites, animation-heavy experiences, dashboards, landing pages, and full-stack learning work."
+            description="A curated collection of frontend, ReactJS, and Next.js projects featuring clean layouts, smooth interactions, responsive design, and modern UI development practices."
           />
           <div className="mb-14 flex max-w-full flex-wrap gap-2 rounded-3xl border border-white/10 bg-white/4 p-2 light:border-black/10 light:bg-white/70 sm:rounded-full">
             {filters.map((filter) => (
@@ -70,7 +70,7 @@ export function Projects() {
                 <img src={project.image} alt={project.title} />
               </div>
               <div className="p-6">
-                <h3 className="font-outfit text-2xl font-semibold text-white light:text-ink">{project.title}</h3>
+                <h3 className="font-outfit text-lg sm:text-2xl font-semibold text-white light:text-ink">{project.title}</h3>
                 <p className="mt-3 min-h-20 text-sm leading-7 text-slate-300 light:text-slate-700">{project.description}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {project.stack.map((tech) => (

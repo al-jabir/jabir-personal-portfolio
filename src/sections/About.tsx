@@ -11,8 +11,8 @@ const stats = [
 ];
 
 const highlights = [
-  { icon: FiCode, title: "Frontend Engineering", text: "React-first development with semantic HTML, modern CSS, and maintainable UI systems." },
-  { icon: FiLayers, title: "Interactive UI", text: "Motion, micro-interactions, and ScrollTrigger experiences that support the product story." },
+  { icon: FiCode, title: "Frontend Developer", text: "React-first development with semantic HTML, modern CSS, and maintainable UI systems." },
+  { icon: FiLayers, title: "Interactive UI", text: "Crafting smooth motion, micro-interactions, and scroll-based animations using GSAP ScrollTrigger to create engaging user experiences." },
   { icon: FiCpu, title: "MERN Direction", text: "Growing backend skills with Node.js, Express.js, and MongoDB to become a full-stack engineer." },
 ];
 
@@ -24,6 +24,7 @@ export function About() {
           eyebrow="About"
           title="Frontend craft with a full-stack future."
           description="I enjoy turning ideas and Figma screens into responsive, animated, production-ready websites. My work focuses on clean architecture, reusable components, accessible UI, and the kind of visual detail that makes an interface feel considered."
+          align="center"
         />
 
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
@@ -69,7 +70,7 @@ export function About() {
                 const Icon = item.icon;
                 return (
                   <motion.article key={item.title} variants={fadeUp} className="glass-panel rounded-3xl p-6">
-                    <div className="flex gap-5">
+                    <div className="flex flex-wrap sm:flex-nowrap gap-5">
                       <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-mint/10 text-2xl text-mint">
                         <Icon />
                       </span>

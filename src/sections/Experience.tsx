@@ -16,7 +16,7 @@ export function Experience() {
         />
 
         <div className="relative mx-auto max-w-4xl">
-          <div className="absolute left-6 top-0 hidden h-full w-px bg-gradient-to-b from-mint via-white/20 to-coral sm:block" />
+          <div className="absolute left-6 top-0 hidden h-full w-px bg-linear-to-b from-mint via-white/20 to-coral sm:block" />
           <div className="space-y-6">
             {experiences.map((experience) => (
               <motion.article
@@ -34,10 +34,10 @@ export function Experience() {
                 <div className="glass-panel rounded-[1.75rem] p-6">
                   <div className="flex flex-col justify-between gap-3 md:flex-row md:items-center">
                     <div>
-                      <h3 className="font-outfit text-2xl font-semibold text-white light:text-ink">{experience.role}</h3>
+                      <h3 className="font-outfit text-xl sm:text-2xl font-semibold text-white light:text-ink">{experience.role}</h3>
                       <p className="mt-1 font-semibold text-mint">{experience.company}</p>
                     </div>
-                    <span className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-semibold text-slate-300 light:border-black/10 light:text-slate-700">
+                    <span className="rounded-full border border-white/10 bg-white/4 px-4 py-2 text-sm font-semibold text-slate-300 light:border-black/10 light:text-slate-700">
                       {experience.period}
                     </span>
                   </div>

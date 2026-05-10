@@ -16,7 +16,7 @@ export function Skills() {
           align="center"
         />
 
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
           {categories.map((category) => (
             <motion.div
               key={category}
@@ -24,11 +24,11 @@ export function Skills() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              className="glass-panel rounded-[2rem] p-5 sm:p-6"
+              className="glass-panel rounded-4xl p-5 sm:p-6"
             >
               <div className="mb-6 flex items-end justify-between gap-4">
-                <h3 className="font-outfit text-2xl font-semibold text-white light:text-ink">{category}</h3>
-                <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-mint light:border-emerald-900/10 light:bg-emerald-50 light:text-emerald-700">
+                <h3 className="font-outfit text-md md:text-2xl font-semibold text-white light:text-ink">{category}</h3>
+                <span className="rounded-full border border-white/10 bg-white/4 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-mint light:border-emerald-900/10 light:bg-emerald-50 light:text-emerald-700">
                   Stack
                 </span>
               </div>
@@ -52,7 +52,7 @@ export function Skills() {
                           <span className="grid size-16 place-items-center rounded-2xl border border-white/10 bg-night/45 text-4xl text-mint shadow-lg shadow-black/10 transition duration-300 group-hover:border-mint/50 group-hover:text-white light:border-slate-900/10 light:bg-white light:text-emerald-700 light:group-hover:text-emerald-800">
                             <Icon />
                           </span>
-                          <span className="text-sm font-bold leading-tight text-white light:text-ink">{skill.name}</span>
+                          <span className="text-xs sm:text-sm font-bold leading-tight text-white light:text-ink">{skill.name}</span>
                         </div>
                       </motion.div>
                     );

@@ -48,8 +48,9 @@ export function Contact() {
       <div className="section-wrap">
         <SectionHeader
           eyebrow="Contact"
-          title="Have a polished frontend idea? Let’s build it."
+          title="Have a polished frontend idea? Let's build it."
           description="Send a message for React websites, landing pages, Figma-to-code work, animation integration, or long-term frontend collaboration."
+          align="center"
         />
 
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
@@ -82,24 +83,24 @@ export function Contact() {
             </div>
           </aside>
 
-          <form className="glass-panel rounded-[2rem] p-5 sm:p-8" onSubmit={handleSubmit}>
+          <form className="glass-panel rounded-4xl p-5 sm:p-8" onSubmit={handleSubmit}>
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="block">
                 <span className="mb-2 block text-sm font-semibold text-slate-300 light:text-slate-700">Name</span>
-                <input name="name" required minLength={2} className="w-full rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-4 text-white placeholder:text-slate-500 light:border-black/10 light:bg-white/70 light:text-ink" placeholder="Your name" />
+                <input name="name" required minLength={2} className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-white placeholder:text-slate-500 light:border-black/10 light:bg-white/70 light:text-ink" placeholder="Your name" />
               </label>
               <label className="block">
                 <span className="mb-2 block text-sm font-semibold text-slate-300 light:text-slate-700">Email</span>
-                <input name="email" type="email" required className="w-full rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-4 text-white placeholder:text-slate-500 light:border-black/10 light:bg-white/70 light:text-ink" placeholder="you@example.com" />
+                <input name="email" type="email" required className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-white placeholder:text-slate-500 light:border-black/10 light:bg-white/70 light:text-ink" placeholder="you@example.com" />
               </label>
             </div>
             <label className="mt-5 block">
               <span className="mb-2 block text-sm font-semibold text-slate-300 light:text-slate-700">Subject</span>
-              <input name="subject" required minLength={3} className="w-full rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-4 text-white placeholder:text-slate-500 light:border-black/10 light:bg-white/70 light:text-ink" placeholder="Project collaboration" />
+              <input name="subject" required minLength={3} className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-white placeholder:text-slate-500 light:border-black/10 light:bg-white/70 light:text-ink" placeholder="Project collaboration" />
             </label>
             <label className="mt-5 block">
               <span className="mb-2 block text-sm font-semibold text-slate-300 light:text-slate-700">Message</span>
-              <textarea name="message" required minLength={10} rows={6} className="w-full resize-none rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-4 text-white placeholder:text-slate-500 light:border-black/10 light:bg-white/70 light:text-ink" placeholder="Tell me about your project..." />
+              <textarea name="message" required minLength={10} rows={6} className="w-full resize-none rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-white placeholder:text-slate-500 light:border-black/10 light:bg-white/70 light:text-ink" placeholder="Tell me about your project..." />
             </label>
             <button type="submit" disabled={sending} className="magnetic-btn mt-6 bg-mint text-ink disabled:cursor-not-allowed disabled:opacity-60">
               <FiSend /> {sending ? "Sending..." : "Send Message"}

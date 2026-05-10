@@ -11,6 +11,7 @@ export function Services() {
           eyebrow="Services"
           title="What I can build for teams, brands, and founders."
           description="From landing pages to React applications, each service is shaped around clean delivery, maintainable code, strong responsiveness, and the right level of motion."
+          align="center"
         />
 
         <motion.div
@@ -18,7 +19,7 @@ export function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
-          className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
+          className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
         >
           {services.map((service) => {
             const Icon = service.icon;
@@ -37,7 +38,7 @@ export function Services() {
                   <span className="mb-7 grid size-14 place-items-center rounded-2xl bg-white/10 text-3xl text-mint light:bg-black/5">
                     <Icon />
                   </span>
-                  <h3 className="font-outfit text-xl font-semibold text-white light:text-ink">{service.title}</h3>
+                  <h3 className="font-outfit text-md sm:text-xl font-semibold text-white light:text-ink">{service.title}</h3>
                   <p className="mt-3 text-sm leading-7 text-slate-300 light:text-slate-700">{service.description}</p>
                 </div>
               </motion.article>

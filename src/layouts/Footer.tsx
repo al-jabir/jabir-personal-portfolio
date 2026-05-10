@@ -17,7 +17,7 @@ export function Footer() {
           </div>
           <div>
             <h3 className="font-outfit text-lg font-semibold text-white light:text-ink">Navigation</h3>
-            <div className="mt-4 grid grid-cols-2 gap-3">
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
               {navItems.slice(0, 6).map((item) => (
                 <a key={item.href} href={item.href} className="text-sm text-slate-400 transition hover:text-mint light:text-slate-600">
                   {item.label}
@@ -39,7 +39,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-10 flex flex-col justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400 light:border-black/10 light:text-slate-600 sm:flex-row sm:items-center">
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-slate-400 light:border-black/10 light:text-slate-600 sm:flex-row">
           <p>Copyright {new Date().getFullYear()} Al Jabir. All rights reserved.</p>
           <a href="#home" className="inline-flex items-center gap-2 font-semibold text-mint">
             Back to top <FiArrowUp />
