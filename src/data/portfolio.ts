@@ -27,10 +27,10 @@ import { HiOutlineSparkles } from "react-icons/hi2";
 import type { IconType } from "react-icons";
 
 import project1 from '../assets/project/1.webp';
-import project2 from '../assets/agency.png';
-import project3 from '../assets/agency.png';
-import project4 from '../assets/agency.png';
-import project5 from '../assets/agency.png';
+import project2 from '../assets/hospital.png';
+import project3 from '../assets/hotel.png';
+import project4 from '../assets/tour.png';
+import project5 from '../assets/ecom.jpg';
 
 export type Skill = {
   name: string;
