@@ -63,11 +63,11 @@ export function Hero() {
             Hi, I'm <span className="text-gradient">Al Jabir</span>
           </h1>
           <p className="mt-6 max-w-3xl font-outfit text-2xl font-medium text-slate-100 light:text-slate-800 sm:text-3xl">
-            Frontend &amp; MERN Stack Developer
+            Frontend Developer
           </p>
           <div className="mt-5 min-h-8 text-lg font-semibold text-mint sm:text-xl">
             <TypeAnimation
-              sequence={["ReactJS Ecosystem", 1400, "GSAP Scroll Experiences", 1400, "Responsive UI Architecture", 1400, "MERN Stack Learning", 1400]}
+              sequence={[ "Frontend Developer", 1400, "Figma to HTML Expert", 1400, "ReactJS Developer", 1400, "Next.js Developer", 1400, "Full-Stack Development in Progress", 1400]}
               speed={48}
               repeat={Infinity}
             />
