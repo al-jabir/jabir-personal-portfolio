@@ -16,7 +16,7 @@ import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
 import { Services } from "./sections/Services";
 import { Skills } from "./sections/Skills";
-import { Testimonials } from "./sections/Testimonials";
+// import { Testimonials } from "./sections/Testimonials";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,9 +60,9 @@ function HomePage() {
       <div data-reveal>
         <Experience />
       </div>
-      <div data-reveal>
+      {/* <div data-reveal>
         <Testimonials />
-      </div>
+      </div> */}
       <div data-reveal>
         <Contact />
       </div>
