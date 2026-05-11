@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FiArrowDown, FiDownload, FiSend } from "react-icons/fi";
 import { FaReact } from "react-icons/fa6";
 import { SiGreensock, SiJavascript, SiRedux, SiTypescript } from "react-icons/si";
-import heroImage from "../assets/aj-me2.jpeg";
+import heroImage from "../assets/images/hero/me.webp";
 import { MagneticButton } from "../components/MagneticButton";
 import { socials } from "../data/portfolio";
 

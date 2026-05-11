@@ -102,7 +102,7 @@ export function Contact() {
               <span className="mb-2 block text-sm font-semibold text-slate-300 light:text-slate-700">Message</span>
               <textarea name="message" required minLength={10} rows={6} className="w-full resize-none rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-white placeholder:text-slate-500 light:border-black/10 light:bg-white/70 light:text-ink" placeholder="Tell me about your project..." />
             </label>
-            <button type="submit" disabled={sending} className="magnetic-btn mt-6 bg-mint text-ink disabled:cursor-not-allowed disabled:opacity-60">
+            <button type="submit" disabled={sending} className="magnetic-btn mt-6 bg-mint text-ink disabled:cursor-not-allowed disabled:opacity-60 cursor-pointer">
               <FiSend /> {sending ? "Sending..." : "Send Message"}
             </button>
             {status === "success" ? <p className="mt-4 rounded-2xl bg-mint/10 px-4 py-3 text-sm font-semibold text-mint">Message sent successfully.</p> : null}

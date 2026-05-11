@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiCode, FiCpu, FiLayers } from "react-icons/fi";
-import heroImage from "../assets/aj-me2.jpeg";
+import heroImage from "../assets/images/hero/me.webp";
 import { SectionHeader } from "../components/SectionHeader";
 import { fadeUp, staggerContainer } from "../animations/variants";
 

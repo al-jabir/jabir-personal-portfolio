@@ -17,11 +17,12 @@ import { FiLayers, FiMonitor, FiPenTool, FiZap } from 'react-icons/fi';
 import { HiOutlineSparkles } from 'react-icons/hi2';
 import type { IconType } from 'react-icons';
 
-import project1 from '../assets/project/1.webp';
-import project2 from '../assets/hospital.png';
-import project3 from '../assets/hotel.png';
-import project4 from '../assets/tour.png';
-import project5 from '../assets/ecom.jpg';
+import project1 from '../assets/images/project/techure.webp';
+import project2 from '../assets/images/project/hotel-bd.webp';
+import project3 from '../assets/images/project/xiomi.webp';
+import project4 from '../assets/images/project/prozen.webp';
+import project5 from '../assets/images/project/travo.webp';
+import project6 from '../assets/images/project/agency.webp';
 
 export type Skill = {
   name: string;
@@ -32,7 +33,7 @@ export type Skill = {
 
 export type Project = {
   title: string;
-  category: 'HTML' | 'ReactJS' | 'NextJS';
+  category: 'HTML' | 'ReactJS';
   description: string;
   stack: string[];
   image: string;
@@ -124,55 +125,69 @@ export const services = [
 
 export const projects: Project[] = [
   {
-    title: 'Travel Website',
+    title: 'Techure - Modern Technology HTML Template',
+    category: 'HTML',
+    description:
+      'A responsive technology-focused HTML template crafted with modern UI design, smooth animations, interactive sections, and clean frontend implementation for startup and agency websites.',
+    stack: ['HTML', 'SCSS', 'Bootstrap', 'JavaScript', 'jQuery'],
+    image: project1,
+    live: 'https://techure.netlify.app/',
+    repo: 'https://github.com/al-jabir/techure',
+    accent: '#00D1FF',
+  },
+  {
+    title: 'Hotel BD - Hotel Booking React Website',
     category: 'ReactJS',
     description:
-      'A cinematic booking interface with destination storytelling, responsive cards, and fluid transitions.',
-    stack: ['ReactJS', 'Tailwind', 'Framer Motion'],
-    image: project1,
-    live: '#',
-    repo: '#',
-    accent: '#56f0c6',
-  },
-  {
-    title: 'Agency Website with GSAP',
-    category: 'HTML',
-    description: 'A bold agency experience with scroll-driven reveals, kinetic typography, and smooth section pacing.',
-    stack: ['ReactJS', 'GSAP', 'ScrollTrigger'],
+      'A modern hotel booking web application built with ReactJS and Vite, featuring responsive layouts and reusable components.',
+    stack: ['ReactJS', 'Vite', 'CSS3', 'JavaScript', 'Responsive Design'],
     image: project2,
-    live: '#',
-    repo: '#',
-    accent: '#ff6f61',
+    live: 'https://hotel-bd.vercel.app/',
+    repo: 'https://github.com/al-jabir/hotel-bd',
+    accent: '#FFB400',
   },
   {
-    title: 'Personal Portfolio Website',
-    category: 'ReactJS',
-    description: 'A high-end developer portfolio with dark mode, magnetic CTAs, and SEO-ready presentation.',
-    stack: ['Vite', 'React', 'EmailJS'],
-    image: project3,
-    live: '#',
-    repo: '#',
-    accent: '#6ddcff',
-  },
-  {
-    title: 'Business Landing Page',
+    title: 'Xiomi - Personal Portfolio HTML Template',
     category: 'HTML',
-    description: 'A polished business page with conversion sections, animated statistics, and elegant content blocks.',
-    stack: ['HTML5', 'SCSS', 'Bootstrap'],
-    image: project4,
-    live: '#',
+    description:
+      'A modern personal portfolio HTML template featuring responsive layouts, smooth UI interactions, clean typography, and visually polished frontend design.',
+    stack: ['HTML', 'SCSS', 'Bootstrap', 'JavaScript', 'jQuery'],
+    image: project3,
+    live: 'https://themeforest.net/item/xiomi-personal-portfolio-html-template/57826843?s_rank=17',
     repo: '#',
-    accent: '#f8c76b',
+    accent: '#7C4DFF',
   },
   {
-    title: 'Dashboard UI',
-    category: 'NextJS',
-    description: 'A clean analytics dashboard with reusable widgets, charts-ready layout, and responsive navigation.',
-    stack: ['React', 'TypeScript', 'Redux Toolkit'],
-    image: project5,
-    live: '#',
+    title: 'Prozen - Business Consulting HTML Template',
+    category: 'HTML',
+    description:
+      'A modern business consulting HTML template built with responsive layouts, clean UI structure, interactive sections, and professional frontend design.',
+    stack: ['HTML', 'SCSS', 'Bootstrap', 'JavaScript', 'jQuery'],
+    image: project4,
+    live: 'https://themeforest.net/item/prozen-business-consulting-html-template/60481864?s_rank=8',
     repo: '#',
-    accent: '#56f0c6',
+    accent: '#2ECC71',
+  },
+  {
+    title: 'Travo - Tour Booking HTML Template',
+    category: 'HTML',
+    description:
+      'A responsive travel booking HTML template crafted with modern UI design, interactive sections, smooth animations, and clean frontend implementation for tourism and booking platforms.',
+    stack: ['HTML', 'SCSS', 'Bootstrap', 'JavaScript', 'jQuery'],
+    image: project5,
+    live: 'https://themeforest.net/item/travo-tour-booking-html-template/57642881?s_rank=9',
+    repo: '#',
+    accent: '#FF6B6B',
+  },
+  {
+    title: 'Modern Creative Agency Website',
+    category: 'ReactJS',
+    description: 'A responsive ReactJS agency website crafted with modern UI aesthetics and smooth interactions.',
+    stack: ['ReactJS', 'CSS3', 'JavaScript', 'Responsive Design'],
+    image: project6,
+    live: 'https://agency-websites.netlify.app/',
+    repo: 'https://github.com/al-jabir/agency-website',
+    accent: '#FF3D81',
   },
 ];
 

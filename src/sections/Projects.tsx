@@ -5,7 +5,7 @@ import { SectionHeader } from "../components/SectionHeader";
 import { projects } from "../data/portfolio";
 import { fadeUp, staggerContainer } from "../animations/variants";
 
-const filters = ["All","HTML","ReactJS", "NextJS"];
+const filters = ["All","HTML","ReactJS"];
 
 export function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -80,12 +80,19 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="mt-6 flex gap-3">
-                  <a href={project.live} className="magnetic-btn min-h-10 bg-mint px-4 text-ink">
+                  <a href={project.live} target="_blank" className="magnetic-btn min-h-10 bg-mint px-4 text-ink">
                     <FiExternalLink /> Live
                   </a>
-                  <a href={project.repo} className="magnetic-btn min-h-10 border border-white/10 px-4 text-white light:border-black/10 light:text-ink">
+                  {project.repo && project.repo !== "#" && (
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="magnetic-btn min-h-10 border border-white/10 px-4 text-white light:border-black/10 light:text-ink"
+                  >
                     <FiGithub /> GitHub
                   </a>
+                )}
                 </div>
               </div>
             </motion.article>
