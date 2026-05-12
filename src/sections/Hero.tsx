@@ -37,7 +37,7 @@ export function Hero() {
             />
             <div className="absolute bottom-7 left-7 right-7 z-20 rounded-3xl border border-white/10 bg-night/65 p-5 backdrop-blur-xl light:border-slate-900/10 light:bg-white/85">
               <p className="text-sm uppercase tracking-[0.24em] text-mint light:text-emerald-700">Currently</p>
-              <p className="mt-2 font-outfit text-lg font-semibold text-white light:text-ink">Junior Frontend Developer at ReactThemes</p>
+              <p className="mt-2 font-outfit text-md sm:text-lg font-semibold text-white light:text-ink">Junior Frontend Developer at ReactThemes</p>
             </div>
           </div>
 

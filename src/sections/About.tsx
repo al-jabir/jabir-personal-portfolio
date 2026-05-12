@@ -7,7 +7,6 @@ import { fadeUp, staggerContainer } from "../animations/variants";
 const stats = [
   { value: "1+", label: "Years experience" },
   { value: "20+", label: "Completed projects" },
-  { value: "17+", label: "Technologies" },
 ];
 
 const highlights = [
@@ -23,7 +22,7 @@ export function About() {
         <SectionHeader
           eyebrow="About"
           title="Frontend craft with a full-stack future."
-          description="I enjoy turning ideas and Figma screens into responsive, animated, production-ready websites. My work focuses on clean architecture, reusable components, accessible UI, and the kind of visual detail that makes an interface feel considered."
+          description="I'm Al Jabir, a frontend developer passionate about crafting modern and responsive web applications with clean UI, smooth interaction, and scalable frontend architecture. I enjoy turning ideas and Figma designs into polished user experiences using React, Next.js, TypeScript, and modern frontend technologies."
           align="center"
         />
 
@@ -39,7 +38,7 @@ export function About() {
             <img src={heroImage} alt="Al Jabir profile" className="aspect-4/5 w-full rounded-3xl object-cover" loading="lazy" />
             <div className="absolute inset-x-6 bottom-6 rounded-3xl border border-white/10 bg-night/70 p-5 backdrop-blur-xl light:border-slate-900/10 light:bg-white/85">
               <p className="text-sm uppercase tracking-[0.22em] text-mint light:text-emerald-700">Focus</p>
-              <p className="mt-2 font-outfit text-2xl font-semibold text-white light:text-ink">React, animation, responsive systems</p>
+              <p className="mt-2 font-outfit text-md sm:text-2xl font-semibold text-white light:text-ink">Scalable React & Next.js Applications</p>
             </div>
           </motion.div>
 
@@ -49,7 +48,7 @@ export function About() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="grid gap-4 sm:grid-cols-3"
+              className="grid gap-4 sm:grid-cols-2"
             >
               {stats.map((stat) => (
                 <motion.div key={stat.label} variants={fadeUp} className="glass-panel rounded-3xl p-6">
