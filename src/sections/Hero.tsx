@@ -48,7 +48,7 @@ export function Hero() {
                 key={item.label}
                 animate={{ y: [0, -16, 0], rotate: [0, 4, -4, 0] }}
                 transition={{ duration: 4 + index * 0.3, repeat: Infinity, ease: "easeInOut" }}
-                className={`absolute hidden rounded-2xl border border-white/10 bg-white/[0.07] p-4 text-3xl shadow-xl backdrop-blur-xl sm:block ${item.className}`}
+                className={`absolute hidden rounded-2xl border border-black/5 bg-black/50 p-4 text-3xl shadow-xl backdrop-blur-xl sm:block ${item.className}`}
                 aria-label={item.label}
               >
                 <Icon />
