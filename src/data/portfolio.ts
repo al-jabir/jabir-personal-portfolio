@@ -29,6 +29,7 @@ export type Skill = {
   level: number;
   category: 'Frontend' | 'Animation & UI' | 'Backend Learning';
   icon: IconType;
+  color: string;
 };
 
 export type Project = {
@@ -53,29 +54,29 @@ export const navItems = [
 ];
 
 export const socials = [
-  { label: 'Facebook', href: 'https://facebook.com/', icon: FaFacebookF },
-  { label: 'GitHub', href: 'https://github.com/', icon: FaGithub },
-  { label: 'LinkedIn', href: 'https://linkedin.com/', icon: FaLinkedinIn },
+  { label: 'Facebook', href: 'https://www.facebook.com/aljabirceo', icon: FaFacebookF },
+  { label: 'GitHub', href: 'https://github.com/al-jabir', icon: FaGithub },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jabirdevs/', icon: FaLinkedinIn },
 ];
 
 export const skillGroups: Skill[] = [
-  { name: 'HTML5', level: 95, category: 'Frontend', icon: FaHtml5 },
-  { name: 'CSS3', level: 94, category: 'Frontend', icon: SiCss },
-  { name: 'SCSS', level: 90, category: 'Frontend', icon: FaSass },
-  { name: 'Bootstrap', level: 88, category: 'Frontend', icon: FaBootstrap },
-  { name: 'JavaScript', level: 91, category: 'Frontend', icon: SiJavascript },
-  { name: 'TypeScript', level: 84, category: 'Frontend', icon: SiTypescript },
-  { name: 'ReactJS', level: 92, category: 'Frontend', icon: FaReact },
-  { name: 'Next.js', level: 82, category: 'Frontend', icon: SiNextdotjs },
-  { name: 'Redux Toolkit', level: 80, category: 'Frontend', icon: SiRedux },
-  { name: 'GSAP', level: 86, category: 'Animation & UI', icon: SiGreensock },
-  { name: 'Framer Motion', level: 88, category: 'Animation & UI', icon: SiFramer },
-  { name: 'ScrollTrigger', level: 84, category: 'Animation & UI', icon: BsLightningCharge },
-  { name: 'Responsive Design', level: 94, category: 'Animation & UI', icon: BsPhoneFlip },
-  { name: 'Figma to HTML', level: 92, category: 'Animation & UI', icon: SiFigma },
-  { name: 'Node.js', level: 68, category: 'Backend Learning', icon: FaNodeJs },
-  { name: 'Express.js', level: 62, category: 'Backend Learning', icon: SiExpress },
-  { name: 'MongoDB', level: 60, category: 'Backend Learning', icon: SiMongodb },
+  { name: 'HTML5', level: 95, category: 'Frontend', icon: FaHtml5, color: '#E34F26' },
+  { name: 'CSS3', level: 94, category: 'Frontend', icon: SiCss, color: '#1572B6' },
+  { name: 'SCSS', level: 90, category: 'Frontend', icon: FaSass, color: '#CC6699' },
+  { name: 'Bootstrap', level: 88, category: 'Frontend', icon: FaBootstrap, color: '#7952B3' },
+  { name: 'JavaScript', level: 91, category: 'Frontend', icon: SiJavascript, color: '#F7DF1E' },
+  { name: 'TypeScript', level: 84, category: 'Frontend', icon: SiTypescript, color: '#3178C6' },
+  { name: 'ReactJS', level: 92, category: 'Frontend', icon: FaReact, color: '#61DAFB' },
+  { name: 'Next.js', level: 82, category: 'Frontend', icon: SiNextdotjs, color: '#FFFFFF' },
+  { name: 'Redux Toolkit', level: 80, category: 'Frontend', icon: SiRedux, color: '#764ABC' },
+  { name: 'GSAP', level: 86, category: 'Animation & UI', icon: SiGreensock, color: '#88CE02' },
+  { name: 'Framer Motion', level: 88, category: 'Animation & UI', icon: SiFramer, color: '#0055FF' },
+  { name: 'ScrollTrigger', level: 84, category: 'Animation & UI', icon: BsLightningCharge, color: '#F5C84C' },
+  { name: 'Responsive Design', level: 94, category: 'Animation & UI', icon: BsPhoneFlip, color: '#38BDF8' },
+  { name: 'Figma to HTML', level: 92, category: 'Animation & UI', icon: SiFigma, color: '#F24E1E' },
+  { name: 'Node.js', level: 68, category: 'Backend Learning', icon: FaNodeJs, color: '#5FA04E' },
+  { name: 'Express.js', level: 62, category: 'Backend Learning', icon: SiExpress, color: '#FFFFFF' },
+  { name: 'MongoDB', level: 60, category: 'Backend Learning', icon: SiMongodb, color: '#47A248' },
 ];
 
 export const services = [
@@ -195,7 +196,7 @@ export const experiences = [
   {
     role: 'Junior Frontend Developer',
     company: 'ReactThemes',
-    period: 'Sep 2025 - Present',
+    period: 'Sep 2025 - May 2026',
     points: [
       'Building modern responsive websites using HTML, CSS, SCSS, Bootstrap, JavaScript, and jQuery.',
       'Converting Figma designs into clean, responsive, and pixel-perfect frontend layouts.',

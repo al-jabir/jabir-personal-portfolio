@@ -1,17 +1,21 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant light (&:where(.light, .light *));
 
 @theme {
-  --font-inter: "Inter", sans-serif;
-  --font-outfit: "Outfit", sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-outfit: 'Outfit', sans-serif;
   --color-ink: #061013;
   --color-night: #05070d;
   --color-panel: #0d111c;
-  --color-mint: #56f0c6;
+  /* --color-mint: #56f0c6;
   --color-coral: #ff6f61;
   --color-amber: #f8c76b;
-  --color-skyglow: #6ddcff;
+  --color-skyglow: #6ddcff; */
+  --color-mint: #00ff9d;
+  --color-coral: #00c2ff;
+  --color-amber: #ffe600;
+  --color-skyglow: #00ffcc;
 }
 
 @layer base {
@@ -28,8 +32,7 @@
     overflow-x: hidden;
     background:
       radial-gradient(circle at top left, rgba(86, 240, 198, 0.14), transparent 28rem),
-      radial-gradient(circle at 78% 8%, rgba(255, 111, 97, 0.13), transparent 26rem),
-      #05070d;
+      radial-gradient(circle at 78% 8%, rgba(255, 111, 97, 0.13), transparent 26rem), #05070d;
     color: #f8fafc;
     font-family: var(--font-inter);
   }
@@ -129,7 +132,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#56f0c6, #ff6f61);
+  background: linear-gradient(#6ddcff, #00ff9d);
   border: 3px solid #05070d;
   border-radius: 999px;
 }
@@ -143,7 +146,11 @@
   border-radius: 999px;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: width 180ms ease, height 180ms ease, background 180ms ease, opacity 180ms ease;
+  transition:
+    width 180ms ease,
+    height 180ms ease,
+    background 180ms ease,
+    opacity 180ms ease;
 }
 
 .custom-cursor.is-hovering {

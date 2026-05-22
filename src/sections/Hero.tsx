@@ -35,9 +35,10 @@ export function Hero() {
               className="relative z-10 aspect-4/5 w-full rounded-[1.45rem] object-cover object-center"
               loading="eager"
             />
+            <div className="pointer-events-none absolute inset-4 z-10 rounded-[1.45rem] bg-linear-to-t from-black/45 via-black/10 to-transparent light:from-black/35 light:via-transparent light:to-transparent" />
             <div className="absolute bottom-7 left-7 right-7 z-20 rounded-3xl border border-white/10 bg-night/65 p-5 backdrop-blur-xl light:border-slate-900/10 light:bg-white/85">
-              <p className="text-sm uppercase tracking-[0.24em] text-mint light:text-emerald-700">Currently</p>
-              <p className="mt-2 font-outfit text-md sm:text-lg font-semibold text-white light:text-ink">Junior Frontend Developer at ReactThemes</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-mint light:text-emerald-700">Status</p>
+              <p className="mt-2 font-outfit text-md sm:text-lg font-semibold text-white light:text-ink">Open to Work / Available for Hire</p>
             </div>
           </div>
 
@@ -48,7 +49,7 @@ export function Hero() {
                 key={item.label}
                 animate={{ y: [0, -16, 0], rotate: [0, 4, -4, 0] }}
                 transition={{ duration: 4 + index * 0.3, repeat: Infinity, ease: "easeInOut" }}
-                className={`absolute hidden rounded-2xl border border-black/5 bg-black/50 p-4 text-3xl shadow-xl backdrop-blur-xl sm:block ${item.className}`}
+                className={`absolute hidden rounded-2xl border border-white/20 bg-night/75 p-4 text-3xl shadow-xl shadow-black/35 backdrop-blur-xl light:border-slate-900/15 light:bg-white/85 sm:block ${item.className}`}
                 aria-label={item.label}
               >
                 <Icon />
@@ -65,12 +66,20 @@ export function Hero() {
           <p className="mt-6 max-w-3xl font-outfit text-2xl font-medium text-slate-100 light:text-slate-800 sm:text-3xl">
             Frontend Developer
           </p>
-          <div className="mt-5 min-h-8 text-lg font-semibold text-mint sm:text-xl">
-            <TypeAnimation
-              sequence={[ "Frontend Developer", 1400, "Figma to HTML Expert", 1400, "ReactJS Developer", 1400, "Next.js Developer", 1400, "Full-Stack Development in Progress", 1400]}
-              speed={48}
-              repeat={Infinity}
-            />
+          <div className="mt-3 min-h-8 text-base font-semibold text-slate-400 sm:text-lg">
+            Specializing in{" "}
+            <span className="text-mint">
+              <TypeAnimation
+                sequence={[
+                  "React & Next.js Applications", 1400,
+                  "Pixel-Perfect Figma to HTML", 1400,
+                  "Premium UI Animations (GSAP)", 1400,
+                  "MERN Full-Stack Learning", 1400
+                ]}
+                speed={48}
+                repeat={Infinity}
+              />
+            </span>
           </div>
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 light:text-slate-700 sm:text-lg">
             I craft animation-rich, production-ready websites with clean React architecture, sharp responsive systems,

@@ -57,9 +57,10 @@ export function Projects() {
               className="project-card glass-panel group overflow-hidden rounded-4xl"
             >
               <div className="relative h-64 overflow-hidden">
-                <motion.div
+                <motion.img
+                  src={project.image}
+                  alt={project.title}
                   className="absolute inset-0"
-                  style={{ background: project.image }}
                   whileHover={{ scale: 1.08 }}
                   transition={{ duration: 0.7 }}
                 />
@@ -67,7 +68,6 @@ export function Projects() {
                 <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/20 px-3 py-1 text-xs font-bold text-white backdrop-blur-xl">
                   {project.category}
                 </div>
-                <img src={project.image} alt={project.title} />
               </div>
               <div className="p-6">
                 <h3 className="font-outfit text-lg sm:text-2xl font-semibold text-white light:text-ink">{project.title}</h3>

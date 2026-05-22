@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import type { CSSProperties } from "react";
 import { SectionHeader } from "../components/SectionHeader";
 import { skillGroups } from "../data/portfolio";
 import { fadeUp, staggerContainer } from "../animations/variants";
@@ -43,14 +44,14 @@ export function Skills() {
                         variants={fadeUp}
                         whileHover={{ y: -8, scale: 1.03 }}
                         transition={{ duration: 0.25 }}
-                        className="group relative min-h-32 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035] p-4 text-center light:border-slate-900/10 light:bg-white/70"
+                        className="group relative min-h-28 overflow-hidden text-center"
                       >
-                        <div className="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
-                          <div className="absolute left-1/2 top-3 size-20 -translate-x-1/2 rounded-full bg-mint/15 blur-2xl" />
-                        </div>
-                        <div className="relative z-10 flex h-full flex-col items-center justify-center gap-4">
-                          <span className="grid size-16 place-items-center rounded-2xl border border-white/10 bg-night/45 text-4xl text-mint shadow-lg shadow-black/10 transition duration-300 group-hover:border-mint/50 group-hover:text-white light:border-slate-900/10 light:bg-white light:text-emerald-700 light:group-hover:text-emerald-800">
-                            <Icon />
+                        <div className="relative z-10 flex h-full flex-col items-center justify-center gap-3">
+                          <span
+                            style={{ '--skill-color': skill.color } as CSSProperties}
+                            className="grid size-16 place-items-center rounded-2xl border border-white/15 text-4xl text-mint transition duration-300 group-hover:border-(--skill-color) light:border-slate-900/15"
+                          >
+                            <Icon style={{ color: skill.color }} />
                           </span>
                           <span className="text-xs sm:text-sm font-bold leading-tight text-white light:text-ink">{skill.name}</span>
                         </div>
