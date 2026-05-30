@@ -50,7 +50,7 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
           exit="hidden"
           transition={{ duration: 0.25 }}
           onClick={onClose}
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm light:bg-black/30"
         >
           <motion.div
             key="modal-content"
@@ -65,7 +65,7 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
             <button
               type="button"
               onClick={onClose}
-              className="icon-btn absolute right-4 top-4 z-10 cursor-pointer"
+              className="icon-btn absolute right-4 top-4 z-10 cursor-pointer light:bg-white light:shadow-md"
               aria-label="Close case study"
             >
               <FiX />
@@ -85,7 +85,7 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
               </div>
             </div>
 
-            <p className="mt-4 text-sm leading-7 text-slate-300 light:text-slate-700">
+            <p className="mt-4 text-sm leading-7 text-slate-300 light:text-slate-800">
               {project.description}
             </p>
 
@@ -93,7 +93,7 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
               {project.stack.map((tech) => (
                 <span
                   key={tech}
-                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-200 light:border-black/10 light:text-slate-700"
+                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-200 light:border-black/10 light:text-slate-800"
                 >
                   {tech}
                 </span>
@@ -124,14 +124,14 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
             <div className="mt-6 space-y-5 border-t border-white/10 pt-5 light:border-slate-900/10">
               <div className="rounded-3xl border border-white/10 bg-white/4 p-4 light:border-slate-900/10 light:bg-white/70">
                 <div className="flex gap-3">
-                  <span className="mt-1 text-mint">
+                  <span className="mt-1 text-mint light:text-emerald-600">
                     <FiTarget />
                   </span>
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-mint light:text-emerald-700">
+                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-mint light:text-emerald-600">
                       Problem
                     </p>
-                    <p className="mt-2 text-sm leading-7 text-slate-300 light:text-slate-700">
+                    <p className="mt-2 text-sm leading-7 text-slate-300 light:text-slate-800">
                       {project.problem}
                     </p>
                   </div>
@@ -140,33 +140,33 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-mint light:text-emerald-700">
-                    Features
-                  </p>
-                  <ul className="mt-3 space-y-2">
-                    {project.features.map((feature) => (
-                      <li key={feature} className="flex gap-2 text-sm leading-6 text-slate-300 light:text-slate-700">
-                        <FiCheckCircle className="mt-1 shrink-0 text-mint" />
+                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-mint light:text-emerald-600">
+                      Features
+                    </p>
+                    <ul className="mt-3 space-y-2">
+                      {project.features.map((feature) => (
+                        <li key={feature} className="flex gap-2 text-sm leading-6 text-slate-300 light:text-slate-800">
+                          <FiCheckCircle className="mt-1 shrink-0 text-mint light:text-emerald-600" />
                         {feature}
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-mint light:text-emerald-700">
-                    My Contribution
-                  </p>
-                  <p className="mt-3 text-sm leading-7 text-slate-300 light:text-slate-700">
+                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-mint light:text-emerald-600">
+                      My Contribution
+                    </p>
+                  <p className="mt-3 text-sm leading-7 text-slate-300 light:text-slate-800">
                     {project.contribution}
                   </p>
                 </div>
               </div>
 
               <div className="border-t border-white/10 pt-5 light:border-slate-900/10">
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-mint light:text-emerald-700">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-mint light:text-emerald-600">
                   Impact / Result
                 </p>
-                <p className="mt-2 text-sm leading-7 text-slate-300 light:text-slate-700">
+                <p className="mt-2 text-sm leading-7 text-slate-300 light:text-slate-800">
                   {project.impact}
                 </p>
               </div>
