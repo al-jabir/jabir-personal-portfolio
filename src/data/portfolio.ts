@@ -13,7 +13,7 @@ import {
 } from 'react-icons/si';
 import { BiCodeAlt } from 'react-icons/bi';
 import { BsLightningCharge, BsPhoneFlip } from 'react-icons/bs';
-import { FiLayers, FiMonitor, FiPenTool, FiZap } from 'react-icons/fi';
+import { FiMonitor } from 'react-icons/fi';
 import { HiOutlineSparkles } from 'react-icons/hi2';
 import type { IconType } from 'react-icons';
 
@@ -36,6 +36,10 @@ export type Project = {
   title: string;
   category: 'HTML' | 'ReactJS';
   description: string;
+  problem: string;
+  features: string[];
+  contribution: string;
+  impact: string;
   stack: string[];
   image: string;
   live: string;
@@ -47,7 +51,7 @@ export const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Services', href: '#services' },
+  { label: 'What I Do', href: '#services' },
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
@@ -81,46 +85,26 @@ export const skillGroups: Skill[] = [
 
 export const services = [
   {
-    title: 'Frontend Web Development',
+    title: 'React Interface Development',
     icon: BiCodeAlt,
     description:
-      'Responsive, accessible interfaces built with semantic markup, component systems, and polished interactions.',
+      'I build component-based React interfaces with clean structure, reusable UI patterns, and production-ready responsive behavior.',
   },
   {
-    title: 'ReactJS Development',
+    title: 'Figma to Code Implementation',
     icon: FaReact,
     description:
-      'Scalable React apps with reusable UI, clean state flow, hooks, routing, and production-ready structure.',
+      'I convert Figma designs into pixel-aware HTML, SCSS, Bootstrap, Tailwind, and React layouts that match real design intent.',
   },
   {
-    title: 'Next.js Website Development',
-    icon: SiNextdotjs,
-    description: 'SEO-friendly, fast-loading websites with modern rendering patterns and thoughtful architecture.',
-  },
-  {
-    title: 'Responsive Website Design',
+    title: 'Responsive Product Pages',
     icon: FiMonitor,
-    description: 'Fluid layouts tuned for phones, tablets, laptops, and wide screens without losing visual rhythm.',
+    description: 'I create landing pages, business pages, dashboards, and template screens that work smoothly across mobile and desktop.',
   },
   {
-    title: 'Landing Page Development',
-    icon: FiLayers,
-    description: 'Conversion-focused landing pages with sharp content hierarchy, rich visuals, and fast delivery.',
-  },
-  {
-    title: 'Figma to HTML Conversion',
-    icon: FiPenTool,
-    description: 'Pixel-aware implementation from Figma using clean CSS, Tailwind, Bootstrap, or SCSS workflows.',
-  },
-  {
-    title: 'UI Animation Integration',
+    title: 'Motion and Polish',
     icon: HiOutlineSparkles,
-    description: 'GSAP, ScrollTrigger, and Framer Motion animations that feel premium without hurting performance.',
-  },
-  {
-    title: 'Performance Optimization',
-    icon: FiZap,
-    description: 'Sharper loading, lighter bundles, optimized assets, and smooth interactions across devices.',
+    description: 'I add GSAP, ScrollTrigger, and interaction details carefully so animation supports usability instead of slowing people down.',
   },
 ];
 
@@ -129,7 +113,14 @@ export const projects: Project[] = [
     title: 'Techure - Modern Technology HTML Template',
     category: 'HTML',
     description:
-      'A responsive technology-focused HTML template crafted with modern UI design, smooth animations, interactive sections, and clean frontend implementation for startup and agency websites.',
+      'A technology website template built for startup and agency presentation with clean sections, responsive layouts, and polished interactions.',
+    problem:
+      'Technology startups need a polished first impression with clear service, feature, pricing, and CTA sections that work across every device.',
+    features: ['Multi-section business homepage', 'Responsive Bootstrap grid system', 'Interactive navigation and UI sections'],
+    contribution:
+      'Implemented the frontend from design structure using HTML, SCSS, Bootstrap, JavaScript, and jQuery with reusable section patterns.',
+    impact:
+      'Delivered a production-style template that demonstrates responsive layout skill, UI consistency, and theme marketplace readiness.',
     stack: ['HTML', 'SCSS', 'Bootstrap', 'JavaScript', 'jQuery'],
     image: project1,
     live: 'https://techure.netlify.app/',
@@ -140,7 +131,14 @@ export const projects: Project[] = [
     title: 'Hotel BD - Hotel Booking React Website',
     category: 'ReactJS',
     description:
-      'A modern hotel booking web application built with ReactJS and Vite, featuring responsive layouts and reusable components.',
+      'A React hotel booking interface focused on reusable components, clean routing-ready structure, and responsive booking UI patterns.',
+    problem:
+      'Hotel users need to scan rooms, trust the layout, and move toward booking without confusion on mobile or desktop.',
+    features: ['Reusable React components', 'Hotel listing and booking-oriented sections', 'Responsive Vite frontend structure'],
+    contribution:
+      'Built the React UI, structured components, handled responsive states, and prepared the interface for future API/data integration.',
+    impact:
+      'Shows practical React implementation beyond static templates, including component thinking and product-style page structure.',
     stack: ['ReactJS', 'Vite', 'CSS3', 'JavaScript', 'Responsive Design'],
     image: project2,
     live: 'https://hotel-bd.vercel.app/',
@@ -151,7 +149,14 @@ export const projects: Project[] = [
     title: 'Xiomi - Personal Portfolio HTML Template',
     category: 'HTML',
     description:
-      'A modern personal portfolio HTML template featuring responsive layouts, smooth UI interactions, clean typography, and visually polished frontend design.',
+      'A personal portfolio HTML template designed to present services, projects, resume-style content, and contact flow clearly.',
+    problem:
+      'Freelancers and creatives need a fast portfolio template that communicates identity, work samples, and contact options quickly.',
+    features: ['Portfolio hero and service sections', 'Responsive project showcase', 'Smooth UI interactions'],
+    contribution:
+      'Converted the layout into clean HTML, SCSS, Bootstrap, JavaScript, and jQuery with consistent spacing and responsive behavior.',
+    impact:
+      'Demonstrates design-to-code accuracy, template packaging experience, and polished portfolio UI delivery.',
     stack: ['HTML', 'SCSS', 'Bootstrap', 'JavaScript', 'jQuery'],
     image: project3,
     live: 'https://themeforest.net/item/xiomi-personal-portfolio-html-template/57826843?s_rank=17',
@@ -162,7 +167,14 @@ export const projects: Project[] = [
     title: 'Prozen - Business Consulting HTML Template',
     category: 'HTML',
     description:
-      'A modern business consulting HTML template built with responsive layouts, clean UI structure, interactive sections, and professional frontend design.',
+      'A business consulting template with service pages, trust sections, professional content hierarchy, and responsive layouts.',
+    problem:
+      'Consulting businesses need credibility-focused pages that explain services, team trust, and conversion paths clearly.',
+    features: ['Business landing sections', 'Service and trust blocks', 'Cross-device responsive implementation'],
+    contribution:
+      'Developed the frontend template structure, responsive sections, interactive details, and reusable styling patterns.',
+    impact:
+      'Shows ability to build professional business websites with clear hierarchy and marketplace-friendly frontend quality.',
     stack: ['HTML', 'SCSS', 'Bootstrap', 'JavaScript', 'jQuery'],
     image: project4,
     live: 'https://themeforest.net/item/prozen-business-consulting-html-template/60481864?s_rank=8',
@@ -173,7 +185,14 @@ export const projects: Project[] = [
     title: 'Travo - Tour Booking HTML Template',
     category: 'HTML',
     description:
-      'A responsive travel booking HTML template crafted with modern UI design, interactive sections, smooth animations, and clean frontend implementation for tourism and booking platforms.',
+      'A travel booking template with destination sections, offer cards, tour details, and responsive UI for tourism platforms.',
+    problem:
+      'Travel websites must present destinations visually while keeping booking CTAs and package information easy to scan.',
+    features: ['Destination and package cards', 'Responsive tourism landing flow', 'Smooth interactive sections'],
+    contribution:
+      'Implemented the full frontend with HTML, SCSS, Bootstrap, JavaScript, and jQuery while preserving visual hierarchy across screens.',
+    impact:
+      'Proves ability to build content-heavy responsive templates with strong visual structure and practical user flow.',
     stack: ['HTML', 'SCSS', 'Bootstrap', 'JavaScript', 'jQuery'],
     image: project5,
     live: 'https://themeforest.net/item/travo-tour-booking-html-template/57642881?s_rank=9',
@@ -183,7 +202,14 @@ export const projects: Project[] = [
   {
     title: 'Modern Creative Agency Website',
     category: 'ReactJS',
-    description: 'A responsive ReactJS agency website crafted with modern UI aesthetics and smooth interactions.',
+    description: 'A React agency website built to present creative services, case-study style content, and conversion-focused CTAs.',
+    problem:
+      'Creative agencies need a modern site that looks premium but still communicates services, work, and contact paths quickly.',
+    features: ['React component layout', 'Responsive agency sections', 'Smooth interaction and CTA flow'],
+    contribution:
+      'Built the React frontend, organized reusable UI sections, tuned responsive spacing, and deployed the live demo.',
+    impact:
+      'Shows React component workflow, live deployment practice, and ability to translate agency design into a usable frontend.',
     stack: ['ReactJS', 'CSS3', 'JavaScript', 'Responsive Design'],
     image: project6,
     live: 'https://agency-websites.netlify.app/',

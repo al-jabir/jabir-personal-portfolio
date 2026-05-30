@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useMemo, useState } from "react";
-import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
+import { FiDownload, FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
+import resumePdf from "../assets/cv/Jabir-resume.pdf";
 import { navItems } from "../data/portfolio";
 import { useActiveSection } from "../hooks/useActiveSection";
 import { useTheme } from "../context/ThemeContext";
@@ -38,6 +39,14 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
+          <a
+            href={resumePdf}
+            download
+            className="hidden min-h-11 items-center gap-2 rounded-full bg-mint px-4 text-sm font-bold text-ink shadow-lg shadow-mint/20 transition hover:bg-white lg:inline-flex"
+          >
+            <FiDownload />
+            Resume
+          </a>
           <button className="icon-btn" type="button" onClick={toggleTheme} aria-label="Toggle theme">
             {theme === "dark" ? <FiSun /> : <FiMoon />}
           </button>
@@ -65,6 +74,15 @@ export function Navbar() {
                 {item.label}
               </a>
             ))}
+            <a
+              href={resumePdf}
+              download
+              onClick={() => setOpen(false)}
+              className="mt-2 flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-mint px-4 text-sm font-bold text-ink"
+            >
+              <FiDownload />
+              Download Resume
+            </a>
           </motion.div>
         ) : null}
       </AnimatePresence>

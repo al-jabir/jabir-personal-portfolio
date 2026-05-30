@@ -1,7 +1,8 @@
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import type { FormEvent } from "react";
-import { FiMail, FiMapPin, FiSend } from "react-icons/fi";
+import { FiDownload, FiMail, FiMapPin, FiSend } from "react-icons/fi";
+import resumePdf from "../assets/cv/Jabir-resume.pdf";
 import { SectionHeader } from "../components/SectionHeader";
 import { socials } from "../data/portfolio";
 
@@ -48,8 +49,8 @@ export function Contact() {
       <div className="section-wrap">
         <SectionHeader
           eyebrow="Contact"
-          title="Have a polished frontend idea? Let's build it."
-          description="Send a message for React websites, landing pages, Figma-to-code work, animation integration, or long-term frontend collaboration."
+          title="Hiring for frontend work? Let's talk."
+          description="I am available for junior frontend roles, React UI work, Figma-to-code implementation, responsive templates, and remote or onsite collaboration with clear handoff."
           align="center"
         />
 
@@ -59,19 +60,25 @@ export function Contact() {
               <span className="mb-6 grid size-12 place-items-center rounded-2xl bg-mint/10 text-2xl text-mint">
                 <FiMail />
               </span>
-              <h3 className="font-outfit text-2xl font-semibold text-white light:text-ink">Collaboration CTA</h3>
+              <h3 className="font-outfit text-2xl font-semibold text-white light:text-ink">Recruiter-ready contact</h3>
               <p className="mt-3 leading-7 text-slate-300 light:text-slate-700">
-                I am open to junior frontend roles, freelance landing pages, React component work, and animation-focused website builds.
+                I am open to junior frontend roles, remote or onsite collaboration, React component work, and frontend implementation tasks.
               </p>
+              <a href="mailto:aljabirceo@gmail.com" className="mt-4 inline-flex font-semibold text-mint">
+                aljabirceo@gmail.com
+              </a>
             </div>
             <div className="glass-panel rounded-[1.75rem] p-6">
               <span className="mb-4 grid size-12 place-items-center rounded-2xl bg-coral/10 text-2xl text-coral">
                 <FiMapPin />
               </span>
               <p className="font-semibold text-white light:text-ink">Based in Bangladesh</p>
-              <p className="mt-2 text-sm text-slate-400 light:text-slate-600">Available for remote collaboration worldwide.</p>
+              <p className="mt-2 text-sm text-slate-400 light:text-slate-600">Available for remote work and onsite opportunities.</p>
             </div>
             <div className="flex gap-3">
+              <a href={resumePdf} download className="icon-btn" aria-label="Download resume">
+                <FiDownload />
+              </a>
               {socials.map((item) => {
                 const Icon = item.icon;
                 return (

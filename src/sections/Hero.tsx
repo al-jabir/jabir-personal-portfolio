@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
 import { FiArrowDown, FiDownload, FiSend } from "react-icons/fi";
 import { FaReact } from "react-icons/fa6";
 import { SiGreensock, SiJavascript, SiRedux, SiTypescript } from "react-icons/si";
+import resumePdf from "../assets/cv/Jabir-resume.pdf";
 import heroImage from "../assets/images/hero/me.webp";
 import { MagneticButton } from "../components/MagneticButton";
 import { socials } from "../data/portfolio";
@@ -13,6 +13,12 @@ const floatingIcons = [
   { icon: SiGreensock, label: "GSAP", className: "left-8 bottom-24 text-mint" },
   { icon: SiRedux, label: "Redux", className: "right-8 bottom-28 text-coral" },
   { icon: SiJavascript, label: "JavaScript", className: "left-1/2 top-0 text-amber" },
+];
+
+const proofItems = [
+  { label: "Frontend focus", value: "React / Next.js UI" },
+  { label: "Delivered work", value: "20+ projects" },
+  { label: "Availability", value: "Remote / Onsite" },
 ];
 
 export function Hero() {
@@ -59,32 +65,26 @@ export function Hero() {
         </motion.div>
         
         <motion.div initial={{ opacity: 0, y: 38 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}>
-          <span className="eyebrow">Available for frontend work</span>
+          <span className="eyebrow">Open to junior frontend roles</span>
           <h1 className="font-outfit text-4xl font-semibold leading-[0.98] text-white light:text-ink sm:text-6xl lg:text-7xl uppercase">
             Hi, I'm <span className="text-gradient">Al Jabir</span>
           </h1>
           <p className="mt-6 max-w-3xl font-outfit text-2xl font-medium text-slate-100 light:text-slate-800 sm:text-3xl">
-            Frontend Developer
+            Frontend Developer for React, UI, and responsive web experiences.
           </p>
-          <div className="mt-3 min-h-8 text-base font-semibold text-slate-400 sm:text-lg">
-            Specializing in{" "}
-            <span className="text-mint">
-              <TypeAnimation
-                sequence={[
-                  "React & Next.js Applications", 1400,
-                  "Pixel-Perfect Figma to HTML", 1400,
-                  "Premium UI Animations (GSAP)", 1400,
-                  "MERN Full-Stack Learning", 1400
-                ]}
-                speed={48}
-                repeat={Infinity}
-              />
-            </span>
-          </div>
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 light:text-slate-700 sm:text-lg">
-            I craft animation-rich, production-ready websites with clean React architecture, sharp responsive systems,
-            and interfaces that feel smooth from the first tap to the final scroll.
+            I help teams turn Figma designs into clean, responsive, production-ready websites with reusable components,
+            polished motion, and practical frontend architecture.
           </p>
+
+          <div className="mt-7 grid gap-3 sm:grid-cols-3">
+            {proofItems.map((item) => (
+              <div key={item.label} className="rounded-2xl border border-white/10 bg-white/5 p-4 light:border-slate-900/10 light:bg-white/75">
+                <p className="text-xs font-bold uppercase tracking-[0.14em] text-mint light:text-emerald-700">{item.label}</p>
+                <p className="mt-2 font-outfit text-lg font-semibold text-white light:text-ink">{item.value}</p>
+              </div>
+            ))}
+          </div>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <MagneticButton href="#contact">
@@ -93,7 +93,7 @@ export function Hero() {
             <MagneticButton href="#projects" variant="secondary">
               View Projects
             </MagneticButton>
-            <MagneticButton href="#" variant="ghost" download>
+            <MagneticButton href={resumePdf} variant="ghost" download>
               <FiDownload /> Download Resume
             </MagneticButton>
           </div>

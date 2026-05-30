@@ -8,9 +8,9 @@ export function Services() {
     <section id="services" className="relative">
       <div className="section-wrap">
         <SectionHeader
-          eyebrow="Services"
-          title="What I can build for teams, brands, and founders."
-          description="From landing pages to React applications, each service is shaped around clean delivery, maintainable code, strong responsiveness, and the right level of motion."
+          eyebrow="What I do"
+          title="What I can build for your team."
+          description="I focus on the tasks junior frontend teams actually need: building clean React interfaces, converting Figma to responsive code, polishing UI states, and preparing pages for production handoff."
           align="center"
         />
 

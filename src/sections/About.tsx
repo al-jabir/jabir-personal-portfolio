@@ -1,18 +1,27 @@
 import { motion } from "framer-motion";
-import { FiCode, FiCpu, FiLayers } from "react-icons/fi";
+import { FiCode, FiCpu, FiDownload, FiExternalLink, FiGithub, FiLayers, FiLinkedin } from "react-icons/fi";
+import resumePdf from "../assets/cv/Jabir-resume.pdf";
 import heroImage from "../assets/images/hero/me.webp";
 import { SectionHeader } from "../components/SectionHeader";
 import { fadeUp, staggerContainer } from "../animations/variants";
 
 const stats = [
-  { value: "1+", label: "Years experience" },
-  { value: "20+", label: "Completed projects" },
+  { value: "2021", label: "Started learning web development" },
+  { value: "20+", label: "Completed frontend projects" },
+  { value: "2", label: "Real team experiences" },
 ];
 
 const highlights = [
-  { icon: FiCode, title: "Frontend Developer", text: "React-first development with semantic HTML, modern CSS, and maintainable UI systems." },
-  { icon: FiLayers, title: "Interactive UI", text: "Crafting smooth motion, micro-interactions, and scroll-based animations using GSAP ScrollTrigger to create engaging user experiences." },
-  { icon: FiCpu, title: "MERN Direction", text: "Growing backend skills with Node.js, Express.js, and MongoDB to become a full-stack engineer." },
+  { icon: FiCode, title: "Skills summary", text: "Strong with HTML, CSS, SCSS, Bootstrap, JavaScript, ReactJS, Next.js basics, responsive UI, and Figma-to-code implementation." },
+  { icon: FiLayers, title: "Experience highlight", text: "Worked on real frontend templates and client-style pages at ReactThemes and PixelOne, focusing on pixel-perfect responsive delivery." },
+  { icon: FiCpu, title: "Career goal", text: "Focused on getting hired as a Frontend Developer while growing toward MERN stack and full-stack engineering." },
+];
+
+const proofLinks = [
+  { label: "Live work", href: "#projects", icon: FiExternalLink },
+  { label: "GitHub", href: "https://github.com/al-jabir", icon: FiGithub, external: true },
+  { label: "Resume", href: resumePdf, icon: FiDownload, download: true },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/jabirdevs/", icon: FiLinkedin, external: true },
 ];
 
 export function About() {
@@ -21,8 +30,8 @@ export function About() {
       <div className="section-wrap">
         <SectionHeader
           eyebrow="About"
-          title="Frontend craft with a full-stack future."
-          description="I'm Al Jabir, a frontend developer passionate about crafting modern and responsive web applications with clean UI, smooth interaction, and scalable frontend architecture. I enjoy turning ideas and Figma designs into polished user experiences using React, Next.js, TypeScript, and modern frontend technologies."
+          title="Frontend developer turning designs into real web experiences."
+          description="I'm Al Jabir, a frontend developer who builds responsive, recruiter-verifiable web projects. My strongest work is converting Figma and product ideas into clean layouts, reusable UI sections, smooth interactions, and frontend code that is easy to inspect, maintain, and deploy."
           align="center"
         />
 
@@ -48,7 +57,7 @@ export function About() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="grid gap-4 sm:grid-cols-2"
+              className="grid gap-4 md:grid-cols-3"
             >
               {stats.map((stat) => (
                 <motion.div key={stat.label} variants={fadeUp} className="glass-panel rounded-3xl p-6">
@@ -81,6 +90,39 @@ export function About() {
                   </motion.article>
                 );
               })}
+            </motion.div>
+
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              className="mt-6 glass-panel rounded-3xl p-5"
+            >
+              <motion.div variants={fadeUp} className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-mint light:text-emerald-700">Proof of work</p>
+                  <h3 className="mt-2 font-outfit text-xl font-semibold text-white light:text-ink">Quick links recruiters can verify</h3>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  {proofLinks.map((link) => {
+                    const Icon = link.icon;
+                    return (
+                      <a
+                        key={link.label}
+                        href={link.href}
+                        download={link.download}
+                        target={link.external ? "_blank" : undefined}
+                        rel={link.external ? "noreferrer" : undefined}
+                        className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/10 px-4 text-sm font-bold text-white transition hover:border-mint/50 hover:text-mint light:border-slate-900/10 light:text-ink"
+                      >
+                        <Icon />
+                        {link.label}
+                      </a>
+                    );
+                  })}
+                </div>
+              </motion.div>
             </motion.div>
           </div>
         </div>

@@ -10,7 +10,7 @@ export function Experience() {
       <div className="section-wrap">
         <SectionHeader
           eyebrow="Experience"
-          title="The path so far, with momentum toward full stack."
+          title="Frontend experience and learning journey."
           description="Professional frontend experience, internship foundations, and a focused learning journey toward the MERN stack and full-stack engineering."
           align="center"
         />

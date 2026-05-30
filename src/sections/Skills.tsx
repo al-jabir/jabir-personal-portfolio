@@ -12,7 +12,7 @@ export function Skills() {
       <div className="section-wrap">
         <SectionHeader
           eyebrow="Skills"
-          title="Modern frontend stack, sharpened for real products."
+          title="Frontend skills I use to build production-ready UI."
           description="A balanced toolkit for building responsive interfaces, animation systems, API-connected screens, and the MERN foundation I am actively strengthening."
           align="center"
         />
